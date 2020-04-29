@@ -31,7 +31,7 @@
         <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
         <tab>Automation</tab>
         <researchViewX>5</researchViewX>
-        <researchViewY>5</researchViewY>
+        <researchViewY>4</researchViewY>
       </ResearchProjectDef>
 
       <ResearchProjectDef>
@@ -46,7 +46,7 @@
         <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
         <tab>Automation</tab>
         <researchViewX>6</researchViewX>
-        <researchViewY>6</researchViewY>
+        <researchViewY>5</researchViewY>
       </ResearchProjectDef>
 
       <ResearchProjectDef>
@@ -61,7 +61,7 @@
         <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
         <tab>Automation</tab>
         <researchViewX>6</researchViewX>
-        <researchViewY>5</researchViewY>
+        <researchViewY>4</researchViewY>
       </ResearchProjectDef>
 
       <ResearchProjectDef>
