@@ -9,73 +9,7 @@
     <defName>PRFcap_gr</defName>
   </DesignatorDropdownGroupDef>
 
-  <ThingDef ParentName="BenchBase">
-    <defName>TablePsychicDisassembler</defName>
-    <label>Psychic Disassembler</label>
-    <thingClass>Building_WorkTable</thingClass>
-    <description>A work station for those with psychic amplifiers to convert items into PG.</description>
-    <graphicData>
-      <texPath>Buildings/TablePsychicDisassembler</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <costList>
-      <PRFRoboticArm>1</PRFRoboticArm>
-      <Steel>200</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-    </costList>
-    <altitudeLayer>Building</altitudeLayer>
-    <fillPercent>0.5</fillPercent>
-    <useHitPoints>True</useHitPoints>
-    <statBases>
-      <WorkToBuild>3500</WorkToBuild>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <size>(3,1)</size>
-    <designationCategory>Production</designationCategory>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <hasInteractionCell>True</hasInteractionCell>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <surfaceType>Item</surfaceType>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
 
-        <basePowerConsumption>400</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Glower">
-        <glowRadius>5</glowRadius>
-        <glowColor>(73,123,138,0)</glowColor>
-      </li>
-      <!-- <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>ToolCabinet</li>
-        </linkableFacilities>
-      </li> -->
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites>
-      <li>AutomationBasics</li>
-    </researchPrerequisites>
-    <!-- <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
-    </placeWorkers> -->
-  </ThingDef>
-
-<!--
   <ThingDef ParentName="PRFBuildingBase">
     <defName>PRFQuantumComputer</defName>
     <label>quantum computer</label>
@@ -138,7 +72,7 @@
     <defName>PaperclipFactory</defName>
     <label>paperclip factory</label>
     <thingClass>ProjectRimFactory.Industry.Building_PaperclipFactory</thingClass>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>
+    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
     <graphicData>
       <texPath>SAL3/PaperclipFactory</texPath>
       <drawSize>(2, 2)</drawSize>
@@ -250,7 +184,7 @@
   <ThingDef ParentName="PRF_AssemblerBase">
     <defName>AtomicReconstructor</defName>
     <label>atomic reconstructor</label>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>
+    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
     <thingClass>ProjectRimFactory.Industry.Building_AtomicReconstructor</thingClass>
     <graphicData>
       <texPath>Industry/AtomicReconstructor</texPath>
@@ -305,7 +239,7 @@
     <defName>PRFMegaCapacitor</defName>
     <label>Mega-Capacitor</label>
     <thingClass>ProjectRimFactory.Industry.Building_CustomBattery</thingClass>
-    <designatorDropdown>PRFcap_gr</designatorDropdown>
+    <designatorDropdown>PRFcap_gr</designatorDropdown>    <!-- Assign Group -->
     <graphicData>
       <texPath>Industry/Battery/MegaCapacitor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -359,7 +293,7 @@
     <defName>PRFHexCapacitor</defName>
     <label>Hex-Capacitor</label>
     <thingClass>ProjectRimFactory.Archo.Things.Building_HexCapacitor</thingClass>
-    <designatorDropdown>PRFcap_gr</designatorDropdown>
+    <designatorDropdown>PRFcap_gr</designatorDropdown>    <!-- Assign Group-->
     <graphicData>
       <texPath>Archo/HexCapacitor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -415,7 +349,7 @@
   <ThingDef ParentName="PRFBuildingBase">
     <defName>PRFPaperclipDuplicator</defName>
     <label>paperclip duplicator</label>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>
+    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
     <thingClass>ProjectRimFactory.Industry.Building_PaperclipDuplicator</thingClass>
     <graphicData>
       <texPath>Archo/PaperclipverseSimulator</texPath>
@@ -454,5 +388,5 @@
     <inspectorTabs>
       <li>ProjectRimFactory.Industry.UI.ITab_PaperclipDuplicator</li>
     </inspectorTabs>
-  </ThingDef> -->
+  </ThingDef>
 </Defs>
