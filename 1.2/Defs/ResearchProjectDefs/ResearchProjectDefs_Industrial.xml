@@ -7,7 +7,10 @@
     <description>Allows colonists to build a factory that creates paperclips from any matter, and a machine that generates power from paperclips.</description>
     <techLevel>Spacer</techLevel>
     <baseCost>1000</baseCost>
-    <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+      <li>PRF_ResearchTerminal</li>
+    </requiredResearchFacilities>
     <prerequisites>
       <li>PRF_CoreTierIII</li>
     </prerequisites>
@@ -26,7 +29,10 @@
       <li>PRF_CoreTierIV</li>
       <li>PaperclipProduction</li>
     </prerequisites>
-    <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+      <li>PRF_ResearchTerminal</li>
+    </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>5</researchViewX>
     <researchViewY>2</researchViewY>
@@ -41,7 +47,10 @@
     <prerequisites>
       <li>PaperclipGeneratorSelfImprovement</li>
     </prerequisites>
-    <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+      <li>PRF_ResearchTerminal</li>
+    </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>6</researchViewX>
     <researchViewY>2</researchViewY>
@@ -56,7 +65,10 @@
     <prerequisites>
       <li>PaperclipGeneratorKugelblitz</li>
     </prerequisites>
-    <requiredResearchBuilding>AIResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+      <li>PRF_ResearchTerminal</li>
+    </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>7</researchViewX>
     <researchViewY>2</researchViewY>
