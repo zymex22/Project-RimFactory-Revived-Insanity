@@ -1,16 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "About"
-		},
-		{
-			"path": "Defs"
-		},
-		{
-			"path": "Patches"
-		},
-		{
-			"path": "Textures"
+			"path": "."
 		}
-	]
+	],
+	"settings": {}
 }

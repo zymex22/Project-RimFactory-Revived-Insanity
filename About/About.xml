@@ -4,11 +4,13 @@
 	<author>zymex</author>
 	<supportedVersions>
       <li>1.1</li>
+      <li>1.2</li>
    </supportedVersions>
     <packageId>com.spdskatr.projectrimfactory.insanity</packageId>
 	<url>https://ludeon.com/forums/index.php?topic=30813.0</url>
 	<description>
-  
+Project RimFactory - Insanity
+
   UNSTABLE BUILD
 
 This Mod wont be updated much before core is done.
