@@ -21,26 +21,24 @@ And is meant to be a lategame addition to Core.
 This is a flavor mod and may not fit in every playthrough.
 
 ## Links:
-Project RimFactory - Core
-https://github.com/zymex22/Project-RimFactory-Revived
-https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700
-
-Project RimFactory - Insanity
-https://github.com/zymex22/Project-RimFactory-Revived-Insanity 
-https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036
-
-Project RimFactory - Drones
-https://github.com/zymex22/Project-RimFactory-Revived-drones
-https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557
-
-Project RimFactory - Materials
-https://github.com/zymex22/Project-RimFactory-Revived-Materials
-
-
-Project RimFactory - Lite (This is not compatible with insanity atm.)
-https://github.com/zymex22/PRF-Lite
-
-
-Discord
-Our Augmented Turtle Squad discord channel:
-https://discord.gg/QBr7Wby
+**Project RimFactory - Core** *(Required)*  
+https://github.com/zymex22/Project-RimFactory-Revived  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2033979700  
+  
+**Project RimFactory - Insanity**  
+https://github.com/zymex22/Project-RimFactory-Revived-Insanity  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037492036  
+  
+**Project RimFactory - Drones**  
+https://github.com/zymex22/Project-RimFactory-Revived-drones  
+https://steamcommunity.com/sharedfiles/filedetails/?id=2037491557  
+  
+**Project RimFactory - Materials**  
+https://github.com/zymex22/Project-RimFactory-Revived-Materials  
+  
+**Project RimFactory - Lite**  
+https://github.com/zymex22/PRF-Lite *(Not Compatible)*  
+  
+**Discord**  
+*Our Augmented Turtle Squad discord channel:*  
+[![ATS Discord](https://imgur.com/x9KVZun.png)](https://discord.gg/QBr7Wby)
