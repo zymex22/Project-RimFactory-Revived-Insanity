@@ -2,14 +2,14 @@
 <Defs>
   <!-- Create Group to Floors -->
   <DesignatorDropdownGroupDef>
-    <defName>PRFpaperclip_gr</defName>
+    <defName>PRF_InsanityStuff_Group</defName>
   </DesignatorDropdownGroupDef>
 
   <DesignatorDropdownGroupDef>
-    <defName>PRFcap_gr</defName>
+    <defName>PRF_Batteries_Group</defName>
   </DesignatorDropdownGroupDef>
 
-
+  <!-- ========== Quantum Computer ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFQuantumComputer</defName>
     <label>quantum computer</label>
@@ -68,12 +68,13 @@
     <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
   </ThingDef>
 
+  <!-- ========== Energy Condenser mkI ========== -->
   <ThingDef ParentName="PRF_AssemblerBase">
     <defName>PaperclipFactory</defName>
-    <label>paperclip factory</label>
+    <label>Energy Condenser</label>    <!-- EMC/Paperclip factory -->
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingClass>ProjectRimFactory.Industry.Building_PaperclipFactory</thingClass>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>
     <graphicData>
       <texPath>SAL3/PaperclipFactory</texPath>
       <drawSize>(2, 2)</drawSize>
@@ -83,7 +84,7 @@
       <WorkToBuild>2000</WorkToBuild>
       <Mass>30</Mass>
     </statBases>
-    <description>A machine that makes paperclips from any raw matter inserted into it - metal, plant or corpse.</description>
+    <description>A machine that condense EMC from any raw matter inserted into it - metal, plant or corpse.</description>
     <stuffCategories />
     <costList>
       <PRF_MachineFrame_III>1</PRF_MachineFrame_III>
@@ -95,9 +96,6 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>400</basePowerConsumption>
-      </li>
-      <li>
-        <compClass>ProjectRimFactory.Common.CompPRFHelp</compClass>
       </li>
     </comps>
     <recipes>
@@ -111,13 +109,19 @@
     <rotatable>false</rotatable>
   </ThingDef>
 
+  <!-- ========== Energy Condenser mkII ========== -->
+  <!-- ......Should be added here at some point...... -->
+
+
+
+  <!-- ========== EMC Power Generator ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
-    <defName>PRFPaperclipPowerGenerator</defName>
-    <label>paperclip power generator</label>
+    <defName>PRF_EmcPowerGenerator</defName>    <!-- PRFPaperclipPowerGenerator -->
+    <label>EMC power generator</label>
     <thingClass>Building</thingClass>
     <minifiedDef>MinifiedThing</minifiedDef>
     <graphicData>
-      <texPath>Industry/PaperclipGenerator</texPath>
+      <texPath>Industry/EMCGenerator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
@@ -135,7 +139,7 @@
       <Mass>105</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
-    <description>Produces power by consuming paperclips. Must be fueled by hand.</description>
+    <description>Produces power by consuming EMC. Must be fueled by hand.</description>
     <canOverlapZones>false</canOverlapZones>
     <size>(2,2)</size>
     <costList>
@@ -183,11 +187,13 @@
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
   </ThingDef>
 
+
+  <!-- ========== Atomic Reconstructor ========== -->
   <ThingDef ParentName="PRF_AssemblerBase">
     <defName>AtomicReconstructor</defName>
-    <label>atomic reconstructor</label>
+    <label>atomic reconstructor</label>    <!-- Atomic Reconstructor -->
     <minifiedDef>MinifiedThing</minifiedDef>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>    <!-- Assign Group -->
     <thingClass>ProjectRimFactory.Industry.Building_AtomicReconstructor</thingClass>
     <graphicData>
       <texPath>Industry/AtomicReconstructor</texPath>
@@ -200,7 +206,7 @@
       <Steel>50</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
-    <description>Converts paperclips into something more useful.</description>
+    <description>Convert your EMC back into Matter.</description>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MarketValue>1000</MarketValue>
@@ -223,9 +229,6 @@
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
-      <li>
-        <compClass>ProjectRimFactory.Common.CompPRFHelp</compClass>
-      </li>
     </comps>
     <researchPrerequisites>
       <li>PRFAtomicReconstruction</li>
@@ -238,11 +241,12 @@
   </ThingDef>
 
 
+  <!-- ========== Mega-Capacitor ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFMegaCapacitor</defName>
     <label>Mega-Capacitor</label>
     <thingClass>ProjectRimFactory.Industry.Building_CustomBattery</thingClass>
-    <designatorDropdown>PRFcap_gr</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_Batteries_Group</designatorDropdown>    <!-- Assign Group -->
     <graphicData>
       <texPath>Industry/Battery/MegaCapacitor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -292,11 +296,12 @@
     </researchPrerequisites>
   </ThingDef>
 
+  <!-- ========== Hex-Capacitor ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFHexCapacitor</defName>
     <label>Hex-Capacitor</label>
     <thingClass>ProjectRimFactory.Archo.Things.Building_HexCapacitor</thingClass>
-    <designatorDropdown>PRFcap_gr</designatorDropdown>    <!-- Assign Group-->
+    <designatorDropdown>PRF_Batteries_Group</designatorDropdown>    <!-- Assign Group-->
     <graphicData>
       <texPath>Archo/HexCapacitor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -352,7 +357,7 @@
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFPaperclipDuplicator</defName>
     <label>paperclip duplicator</label>
-    <designatorDropdown>PRFpaperclip_gr</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>    <!-- Assign Group -->
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingClass>ProjectRimFactory.Industry.Building_PaperclipDuplicator</thingClass>
     <graphicData>
@@ -378,11 +383,6 @@
       <Plasteel>50</Plasteel>
       <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
-    <comps>
-      <li>
-        <compClass>ProjectRimFactory.Common.CompPRFHelp</compClass>
-      </li>
-    </comps>
     <rotatable>false</rotatable>
     <designationCategory>Industrial</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
