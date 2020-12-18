@@ -107,6 +107,14 @@
       <li>PaperclipProduction</li>
     </researchPrerequisites>
     <rotatable>false</rotatable>
+    <modExtensions>
+      <li Class="ProjectRimFactory.Common.ModExtension_Skills">
+        <SkillUsage>ThisOverrides</SkillUsage>
+        <BaseSkill>20</BaseSkill>
+        <skills>
+        </skills>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- ========== Energy Condenser mkII ========== -->
