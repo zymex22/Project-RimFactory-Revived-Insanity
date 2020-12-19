@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+  <!-- =============================== EMC (Energy Matter Covalence) Energy Cubes =================================== -->
   <ThingDef ParentName="PRFResourceBase">
     <defName>Paperclip</defName>
     <label>EMC</label>
     <description>EMC(Energy Matter Covalence) Is used as a "currency" when items is turned into EMC.\nThey are represented by small Energy cubes, each EMC energy cube weight exactly 1g each.\nThey can be used to transform back into Raw matter or they can be used to fuel different things instead. Think of equivalent exchange.\n\n -EMC may even be related to Einstein's famous E=mc2 equation, showing the equivalence of mass and energy.</description>
     <graphicData>
-      <texPath>Common/Paperclip</texPath>
+      <texPath>Common/EMC</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
@@ -24,7 +26,8 @@
       <li Class="ProjectRimFactory.Industry.DefModExtension_AtomicReconstructorDisallow" />
     </modExtensions>
   </ThingDef>
-  
+
+  <!-- =============================== Computronium =================================== -->
   <ThingDef ParentName="PRFResourceBase">
     <defName>PRFComputronium</defName>
     <label>Computronium</label>

@@ -3,8 +3,8 @@
   <!-- Tier 2 -->
   <ResearchProjectDef>
     <defName>PaperclipProduction</defName>
-    <label>paperclip production</label>
-    <description>Allows colonists to build a factory that creates paperclips from any matter, and a machine that generates power from paperclips.</description>
+    <label>E=mc2 Equation</label>
+    <description>With full understanding of Einstains e=mc squared equation. Allows colonists to build a Energy Condenser that turns raw matter into small Energy Cubes(EMC)</description>
     <techLevel>Spacer</techLevel>
     <baseCost>1000</baseCost>
     <requiredResearchFacilities>
@@ -21,10 +21,10 @@
 
   <ResearchProjectDef>
     <defName>PaperclipGeneratorSelfImprovement</defName>
-    <label>paperclip power generator: self-improvement</label>
+    <label>EMC power generator: self-improvement</label>
     <techLevel>Spacer</techLevel>
     <baseCost>2250</baseCost>
-    <description>Paperclip power generator slowly produces more power per paperclip (up to 500%) unless flicked or out of fuel.</description>
+    <description>EMC power generator slowly produces more power per EMC (up to 500%) unless flicked or out of fuel.</description>
     <prerequisites>
       <li>PRF_CoreTierIV</li>
       <li>PaperclipProduction</li>
@@ -40,10 +40,10 @@
 
   <ResearchProjectDef>
     <defName>PaperclipGeneratorKugelblitz</defName>
-    <label>paperclip power generator: kugelblitz</label>
+    <label>EMC power generator: kugelblitz</label>
     <techLevel>Spacer</techLevel>
     <baseCost>5000</baseCost>
-    <description>Paperclip power generator maximum efficiency increased up to 1000%.</description>
+    <description>EMC power generator maximum efficiency increased up to 1000%.</description>
     <prerequisites>
       <li>PaperclipGeneratorSelfImprovement</li>
     </prerequisites>
@@ -58,10 +58,10 @@
 
   <ResearchProjectDef>
     <defName>PaperclipGeneratorQuantumFoamManipulation</defName>    <!-- Keep this def name for backwards compatibility -->
-    <label>paperclip power generator: quantum foam manipulation</label>
+    <label>EMC power generator: quantum foam manipulation</label>
     <techLevel>Spacer</techLevel>
     <baseCost>10000</baseCost>
-    <description>Paperclip power generator maximum efficiency increased up to 2500%.</description>
+    <description>EMC power generator maximum efficiency increased up to 2500%.</description>
     <prerequisites>
       <li>PaperclipGeneratorKugelblitz</li>
     </prerequisites>

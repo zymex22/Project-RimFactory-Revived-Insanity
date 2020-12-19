@@ -25,7 +25,7 @@
     <label>Atomic reconstruction</label>
     <techLevel>Spacer</techLevel>
     <baseCost>2000</baseCost>
-    <description>Allows colonists to turn paperclips into raw materials.</description>
+    <description>Allows colonists to turn EMC into raw materials.</description>
     <prerequisites>
       <li>PRF_CoreTierIV</li>
       <li>PaperclipProduction</li>
@@ -63,7 +63,7 @@
     <label>edibles synthesis</label>
     <techLevel>Spacer</techLevel>
     <baseCost>2500</baseCost>
-    <description>Create foods by manipulating the molecular structure of paperclips.</description>
+    <description>Create foods by manipulating the molecular structure of EMC.</description>
     <prerequisites>
       <li>PRFAtomicReconstruction</li>
     </prerequisites>
@@ -81,7 +81,7 @@
     <label>manufacturables production</label>
     <techLevel>Spacer</techLevel>
     <baseCost>3000</baseCost>
-    <description>Allows colonists to also convert paperclips into items in the "manufactured" category.</description>
+    <description>Allows colonists to also convert EMC into items in the "manufactured" category.</description>
     <prerequisites>
       <li>PRFEdiblesSynthesis</li>
     </prerequisites>

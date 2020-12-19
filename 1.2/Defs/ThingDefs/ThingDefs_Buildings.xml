@@ -13,11 +13,12 @@
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFQuantumComputer</defName>
     <label>quantum computer</label>
-    <description>Required for tier 3 Industrial research - increases research speed by 75%. Needs to be placed near AI research bench. Consumes considerable power. One research bench can be linked to only one quantum computer.</description>
+    <description>Required for tier 4 Industrial research - increases research speed by 75%. Needs to be placed near AI research bench. Consumes considerable power. One research bench can be linked to only one quantum computer.</description>
     <graphicData>
       <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
+      <color>(153,0,0,256)</color>      <!--change color on maske manually -->
       <damageData>
         <rect>(0.15,0.15,1.7,1.7)</rect>
       </damageData>
@@ -27,7 +28,6 @@
     </researchPrerequisites>
     <size>(1,1)</size>
     <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
@@ -41,7 +41,6 @@
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
       <Mass>100</Mass>
-      <Flammability>1.0</Flammability>
     </statBases>
     <costList>
       <Steel>100</Steel>
@@ -82,7 +81,7 @@
     <size>(2, 2)</size>
     <statBases>
       <WorkToBuild>2000</WorkToBuild>
-      <Mass>30</Mass>
+      <Mass>50</Mass>
     </statBases>
     <description>A machine that condense EMC from any raw matter inserted into it - metal, plant or corpse.</description>
     <stuffCategories />
@@ -133,7 +132,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>150</pathCost>
     <blockWind>true</blockWind>
@@ -143,7 +141,6 @@
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
-      <Flammability>1.0</Flammability>
       <Mass>105</Mass>
     </statBases>
     <tickerType>Normal</tickerType>
@@ -188,7 +185,6 @@
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <designationHotKey>Misc3</designationHotKey>
-    <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>PaperclipProduction</li>
     </researchPrerequisites>
@@ -196,12 +192,13 @@
   </ThingDef>
 
 
+
   <!-- ========== Atomic Reconstructor ========== -->
   <ThingDef ParentName="PRF_AssemblerBase">
     <defName>AtomicReconstructor</defName>
-    <label>atomic reconstructor</label>    <!-- Atomic Reconstructor -->
+    <label>atomic Reconstructor</label>    <!-- Atomic Reconstructor -->
     <minifiedDef>MinifiedThing</minifiedDef>
-    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>
     <thingClass>ProjectRimFactory.Industry.Building_AtomicReconstructor</thingClass>
     <graphicData>
       <texPath>Industry/AtomicReconstructor</texPath>
@@ -214,18 +211,18 @@
       <Steel>50</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
-    <description>Convert your EMC back into Matter.</description>
+    <description>Transmute your Energy cubes (EMC) back into Raw Matter.\nFunctions as a blueprint database to turn your EMC into Raw Resources again.</description>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MarketValue>1000</MarketValue>
       <Mass>100</Mass>
     </statBases>
     <comps>
-      <li Class="CompProperties_Power">
+      <li Class="CompProperties_Power">        <!-- Consume power to be turned on -->
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>700</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Refuelable">
+      <li Class="CompProperties_Refuelable">        <!-- Consume EMC to make your things back to matter -->
         <fuelConsumptionRate>0</fuelConsumptionRate>
         <fuelCapacity>1000000</fuelCapacity>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
@@ -249,18 +246,58 @@
   </ThingDef>
 
 
+  <!-- ========== EMC duplicator ========== -->
+  <ThingDef ParentName="PRF_BuildingBase">
+    <defName>PRFPaperclipDuplicator</defName>
+    <label>EMC duplicator</label>    <!-- Paperclip Duplicator -->
+    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingClass>ProjectRimFactory.Industry.Building_PaperclipDuplicator</thingClass>
+    <graphicData>
+      <texPath>Archo/PaperclipverseSimulator</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <size>(2, 2)</size>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <description>A Banach-Tarski duplicator set to duplicate EMC. Every day the amount of EMC stored grows by 5%. Any attempts to tamper with the EMC duplicator will destroy all stored EMC.</description>
+    <costList>
+      <PRF_MachineFrame_III>1</PRF_MachineFrame_III>
+      <PRF_ElectronicChip_III>1</PRF_ElectronicChip_III>
+      <Steel>200</Steel>
+      <Plasteel>50</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>0.3</staticSunShadowHeight>
+    <researchPrerequisites>
+      <li>PaperclipProduction</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ProjectRimFactory.Industry.UI.ITab_PaperclipDuplicator</li>
+    </inspectorTabs>
+  </ThingDef>
+
+
+  <!-- =============================== Batteries =================================== -->
   <!-- ========== Mega-Capacitor ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFMegaCapacitor</defName>
     <label>Mega-Capacitor</label>
     <thingClass>ProjectRimFactory.Industry.Building_CustomBattery</thingClass>
-    <designatorDropdown>PRF_Batteries_Group</designatorDropdown>    <!-- Assign Group -->
+    <designatorDropdown>PRF_Batteries_Group</designatorDropdown>
     <graphicData>
       <texPath>Industry/Battery/MegaCapacitor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <blockWind>true</blockWind>
@@ -295,10 +332,8 @@
         <transmitsPower>true</transmitsPower>
       </li>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>PRFOrdoDataRummaging</li>
     </researchPrerequisites>
@@ -315,7 +350,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <blockWind>true</blockWind>
@@ -332,7 +366,6 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>4000</WorkToBuild>
       <Mass>100</Mass>
-      <Flammability>1.0</Flammability>
       <Beauty>-40</Beauty>
     </statBases>
     <description>A battery that uses hex-cells to store 16 million watt days of power. Has 100% efficiency. It is also waterproof.</description>
@@ -353,52 +386,12 @@
         <transmitsPower>true</transmitsPower>
       </li>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
       <li>PRFVanometrics</li>
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="PRF_BuildingBase">
-    <defName>PRFPaperclipDuplicator</defName>
-    <label>paperclip duplicator</label>
-    <designatorDropdown>PRF_InsanityStuff_Group</designatorDropdown>    <!-- Assign Group -->
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingClass>ProjectRimFactory.Industry.Building_PaperclipDuplicator</thingClass>
-    <graphicData>
-      <texPath>Archo/PaperclipverseSimulator</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2, 2)</drawSize>
-    </graphicData>
-    <size>(2, 2)</size>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.5</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-    <statBases>
-      <WorkToBuild>3000</WorkToBuild>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-    </statBases>
-    <description>A Banach-Tarski duplicator set to duplicate paperclips. Every day the amount of paperclips stored grows by 5%. Any attempts to tamper with the paperclip duplicator will destroy all stored paperclips.</description>
-    <costList>
-      <PRF_MachineFrame_III>1</PRF_MachineFrame_III>
-      <PRF_ElectronicChip_III>1</PRF_ElectronicChip_III>
-      <Steel>200</Steel>
-      <Plasteel>50</Plasteel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
-    <rotatable>false</rotatable>
-    <designationCategory>Industrial</designationCategory>
-    <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <researchPrerequisites>
-      <li>PaperclipProduction</li>
-    </researchPrerequisites>
-    <inspectorTabs>
-      <li>ProjectRimFactory.Industry.UI.ITab_PaperclipDuplicator</li>
-    </inspectorTabs>
-  </ThingDef>
+
 </Defs>
