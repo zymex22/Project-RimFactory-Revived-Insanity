@@ -3,11 +3,7 @@
 <Defs>
 
   <!-- Create Group to Floors -->
-  <DesignatorDropdownGroupDef>
-    <defName>PRFFloor_gr</defName>
-  </DesignatorDropdownGroupDef>
-
-  <TerrainDef Name="PRFFloorBase" Abstract="True">
+  <TerrainDef Name="PRFFloorBase" ParentName="TileMetalBase" Abstract="True">
     <layerable>true</layerable>
     <affordances>
       <li>Light</li>
@@ -23,7 +19,6 @@
 
   <TerrainDef ParentName="PRFFloorBase">
     <defName>PRFXCompositeTile</defName>
-    <designatorDropdown>PRFFloor_gr</designatorDropdown>    <!-- Assign Group to Floors -->
     <label>X-Composite tile</label>
     <renderPrecedence>251</renderPrecedence>
     <description>X-Composite tiles engraved with intricate patterns. They are incredibly beautiful. Perfect for showing off as a glitterworld quindecillionaire.</description>
@@ -46,7 +41,7 @@
 
   <TerrainDef ParentName="PRFFloorBase">
     <defName>PRFYCompositeTile</defName>
-    <designatorDropdown>PRFFloor_gr</designatorDropdown>    <!-- Assign Group to Floors -->
+
     <label>Y-Composite tile</label>
     <renderPrecedence>252</renderPrecedence>
     <description>Y-Composite tiles. Much less beautiful than X-Composite but easier to build, and offers a great boost to cleanliness.</description>
@@ -69,7 +64,6 @@
 
   <TerrainDef ParentName="PRFFloorBase">
     <defName>PRFZCompositeTile</defName>
-    <designatorDropdown>PRFFloor_gr</designatorDropdown>    <!-- Assign Group to Floors -->
     <label>Z-Composite tile</label>
     <renderPrecedence>252</renderPrecedence>
     <description>Z-Composite tiles engraved with 3-d holograms. Ludicrously beautiful and offers moderate cleanliness.</description>

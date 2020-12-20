@@ -123,8 +123,6 @@
 
 
 
-
-
   <!-- ========== Atomic Reconstructor ========== -->
   <ThingDef ParentName="PRF_AssemblerBase">
     <defName>AtomicReconstructor</defName>
