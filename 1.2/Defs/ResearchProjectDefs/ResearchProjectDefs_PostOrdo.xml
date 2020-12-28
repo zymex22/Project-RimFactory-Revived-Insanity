@@ -15,7 +15,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>8</researchViewX>
+    <researchViewX>15</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
@@ -34,7 +34,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>8</researchViewX>
+    <researchViewX>15</researchViewX>
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
 
@@ -53,7 +53,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>8</researchViewX>
+    <researchViewX>15</researchViewX>
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
@@ -73,7 +73,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>9</researchViewX>
+    <researchViewX>16</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
@@ -93,7 +93,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>9</researchViewX>
+    <researchViewX>16</researchViewX>
     <researchViewY>3</researchViewY>
   </ResearchProjectDef>
 
@@ -113,7 +113,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>9</researchViewX>
+    <researchViewX>16</researchViewX>
     <researchViewY>4</researchViewY>
   </ResearchProjectDef>
 
@@ -134,7 +134,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>10</researchViewX>
+    <researchViewX>17</researchViewX>
     <researchViewY>3</researchViewY>
     <researchMods>
       <li Class="ProjectRimFactory.Archo.ResearchMod_Notify">

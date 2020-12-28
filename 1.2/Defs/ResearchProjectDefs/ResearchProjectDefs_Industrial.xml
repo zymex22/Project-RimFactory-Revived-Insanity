@@ -4,7 +4,7 @@
   <ResearchProjectDef>
     <defName>PaperclipProduction</defName>
     <label>E=mc2 Equation</label>
-    <description>With full understanding of Einstains e=mc squared equation. Allows colonists to build a Energy Condenser that turns raw matter into small Energy Cubes(EMC)</description>
+    <description>Learn full potential of Einstains e=mc squared equation. This will allow colonists to build a Energy Condenser that turns raw matter into small Energy Cubes(EMC)</description>
     <techLevel>Spacer</techLevel>
     <baseCost>1000</baseCost>
     <requiredResearchFacilities>
@@ -15,8 +15,8 @@
       <li>PRF_CoreTierIII</li>
     </prerequisites>
     <tab>Automation</tab>
-    <researchViewX>4</researchViewX>
-    <researchViewY>5</researchViewY>
+    <researchViewX>11</researchViewX>
+    <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -34,7 +34,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>5</researchViewX>
+    <researchViewX>12</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
@@ -52,7 +52,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>6</researchViewX>
+    <researchViewX>13</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
@@ -70,7 +70,7 @@
       <li>PRF_ResearchTerminal</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
-    <researchViewX>7</researchViewX>
+    <researchViewX>14</researchViewX>
     <researchViewY>2</researchViewY>
   </ResearchProjectDef>
 
