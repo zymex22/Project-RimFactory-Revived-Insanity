@@ -13,6 +13,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>15</researchViewX>
@@ -32,6 +33,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>15</researchViewX>
@@ -51,6 +53,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>15</researchViewX>
@@ -71,6 +74,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>16</researchViewX>
@@ -138,7 +142,7 @@
     <researchViewY>3</researchViewY>
     <researchMods>
       <li Class="ProjectRimFactory.Archo.ResearchMod_Notify">
-        <text>A strange feeling washes over your colonists. They speculate that the psychic signals may have originated from your very own AI research bench. Maybe it's trying to tell you something...</text>
+        <text>A strange feeling washes over your colonists. They speculate that the psychic signals may have originated from your very own Quantum Device. Maybe it's trying to tell you something...</text>
       </li>
     </researchMods>
   </ResearchProjectDef>

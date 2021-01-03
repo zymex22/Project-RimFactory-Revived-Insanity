@@ -5,7 +5,7 @@
     <label>Quantum computing</label>
     <techLevel>Spacer</techLevel>
     <baseCost>2000</baseCost>
-    <description>Learn how to create quantum computers to aid in research projects.</description>
+    <description>Learn how to create quantum computers to aid in research projects. This Special device need to be linked to your Hi-tech research bench in order to research further into theese insanity techs.</description>
     <prerequisites>
       <li>PRF_CoreTierIV</li>
       <li>PaperclipProduction</li>
@@ -34,6 +34,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>12</researchViewX>
@@ -52,6 +53,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>13</researchViewX>
@@ -70,6 +72,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>13</researchViewX>
@@ -88,6 +91,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>14</researchViewX>
@@ -107,6 +111,7 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>13</researchViewX>
@@ -118,13 +123,14 @@
     <label>Ordo data rummaging</label>
     <techLevel>Spacer</techLevel>
     <baseCost>10000</baseCost>
-    <description>The AI research bench has detected a scrambled radio signal originating from deep within the planet, broadcasting records of the Ordo Historia. Unscramble the signal and search through the records in the hopes of uncovering more technology.</description>
+    <description>The Quantum Device has detected a scrambled radio signal originating from deep within the planet, broadcasting records of the Ordo Historia. Unscramble the signal and search through the records in the hopes of uncovering more technology.</description>
     <prerequisites>
       <li>PRFAIPersonaProduction</li>
     </prerequisites>
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
       <li>PRF_ResearchTerminal</li>
+      <li>PRFQuantumComputer</li>
     </requiredResearchFacilities>
     <tab>Automation</tab>
     <researchViewX>14</researchViewX>

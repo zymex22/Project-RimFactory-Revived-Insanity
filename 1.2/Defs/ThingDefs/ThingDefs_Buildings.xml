@@ -12,8 +12,8 @@
   <!-- ========== Quantum Computer ========== -->
   <ThingDef ParentName="PRF_BuildingBase">
     <defName>PRFQuantumComputer</defName>
-    <label>quantum computer</label>
-    <description>Required for tier 4 Industrial research - increases research speed by 75%. Needs to be placed near AI research bench. Consumes considerable power. One research bench can be linked to only one quantum computer.</description>
+    <label>Quantum Device</label>
+    <description>Required insanity tech - increases research speed by 75%. Needs to be placed near Hi-tech research bench. Consumes considerable power. One research bench can be linked to only one quantum device.</description>
     <graphicData>
       <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
